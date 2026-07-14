@@ -1,0 +1,25 @@
+[Unit]
+Description=ESPHome Linux Bluetooth Proxy Service
+After=bluetooth.target network.target
+
+[Service]
+Type=simple
+User=winterfell
+WorkingDirectory=/opt/esphome-linux
+
+# Tell the application where to look for your packaged .so libraries
+Environment="LD_LIBRARY_PATH=/opt/esphome-linux/lib"
+
+# Path to the executable
+ExecStart=/opt/esphome-linux/bin/esphome-linux
+
+# Automatically restart the service if it crashes
+Restart=always
+RestartSec=5
+
+# Security: Grant only the required Bluetooth network permissions, not full root access
+CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_RAW
+AmbientCapabilities=CAP_NET_ADMIN CAP_NET_RAW
+
+[Install]
+WantedBy=multi-user.target
