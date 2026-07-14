@@ -1,7 +1,10 @@
 # esphome-linux-pi-zero-w
 Esphome-linux for pi zero w
 
-I create the repo to Share esphome-linux https://github.com/yinzara/esphome-linux packages for Pi-zero-w 
+I create the repo to Share esphome-linux by yinzara https://github.com/yinzara/esphome-linux packages for Pi-zero-w 
+
+<b>ESPhome-Linux<b> <br>
+A lightweight TCP service that implements the ESPHome Native API, enabling any Linux device to provide the same functionality as an ESPHome device. Home Assistant will see the device as a native ESPHome device.
 
 The .deb package conatins the bin, lib and systemd file to run esphome-linux on Pi zero w
 
