@@ -1,5 +1,4 @@
 # esphome-linux-pi-zero-w
-Esphome-linux for pi zero w
 
 I create the repo to Share esphome-linux by yinzara https://github.com/yinzara/esphome-linux packages for Pi-zero-w 
 
